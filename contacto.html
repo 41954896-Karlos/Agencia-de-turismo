@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | Inti Tours Cusco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="bloque-fijo-superior shadow-sm">
+        <header class="header-inti">
+            <div class="contenedor-fijo d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="img/logo.png" alt="Logo Inti Tours" class="logo-img">
+                    <div>
+                        <h1 class="mb-0 text-white fw-bold">INTI TOURS</h1>
+                        <p class="mb-0 text-light fst-italic">Nuestros Paquetes Turísticos</p>
+                    </div>
+                </div>
+                <div class="contacto-rapido text-end text-white">
+                    <div><i class="fas fa-phone-alt me-1"></i> +51 (084) 123 456</div>
+                    <div><i class="fas fa-envelope me-1"></i> reservas@intitours.com</div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand navbar-dark bg-azul-principal nav-centrado">
+            <div class="contenedor-fijo d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html"><i class="fas fa-map-marked-alt me-2"></i>Tours</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html"><i class="fas fa-envelope me-2"></i>Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main class="contenedor-fijo my-4">
+        <div class="row g-4">
+            <div class="col-7">
+                <div class="card shadow-sm border-0 p-4 bg-white">
+                    <h3 class="text-azul fw-bold mb-3"><i class="fas fa-paper-plane me-2"></i>Contáctanos</h3>
+                    <div id="alertaContacto" class="d-none alert alert-dismissible fade show"></div>
+
+                    <form id="frmContacto" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ej: Carlos Quispe" required>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-6">
+                                <label for="email" class="form-label fw-semibold">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="telefono" class="form-label fw-semibold">Teléfono:</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="+51 987 654 321" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tour" class="form-label fw-semibold">Tour de Interés:</label>
+                            <select class="form-select" id="tour" required>
+                                <option value="">-- Seleccione un Tour --</option>
+                                <option value="Choquequirao 5D/4N">Choquequirao 5D/4N</option>
+                                <option value="Machu Picchu Full Day">Machu Picchu Full Day</option>
+                                <option value="Salkantay Trek 5D/4N">Salkantay Trek 5D/4N</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu consulta..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-azul btn-lg w-100 fw-bold">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="bg-white p-4 rounded shadow-sm border h-100">
+                    <h4 class="text-azul fw-bold mb-4">Información de Inti Tours</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-map-marker-alt text-primary me-2"></i> <strong>Dirección:</strong><br><span class="text-muted ms-4">Av. El Sol 123, Cusco - Perú</span></li>
+                        <li class="mb-3"><i class="fas fa-phone text-primary me-2"></i> <strong>Teléfono:</strong><br><span class="text-muted ms-4">+51 (084) 123 456</span></li>
+                        <li class="mb-3"><i class="fas fa-envelope text-primary me-2"></i> <strong>Correo:</strong><br><span class="text-muted ms-4">informes@intitours.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3 text-center mt-5">
+        <p class="mb-0 small">© 2026 Inti Tours - Carlos Quispe Pareja</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
